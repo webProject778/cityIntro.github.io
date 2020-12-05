@@ -9,32 +9,36 @@
     <script type="text/javascript" src="./JQuery/jquery-3.4.1.js"></script>
     <script src="./dist/Bmob-1.6.1.min.js"></script>
     <script type="text/javascript" src="./js/city.js"></script>
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=2.0&ak=6yAoynmTPNlTBa8z1X4LfwGE"></script>
+
 
 <body>
     <div class="head_wrap page_width">
         <div class="up">
             <div class="title">城市介绍</div>
-            <div class="location">您当前位置：<a class="pos">宜宾</a></div>
+            <div class="location">您当前位置：<a style="position: relative;" class="pos"></a>
+            </div>
         </div>
         <div class="down">
-            <div class="slideshow">
-                
-                <ul>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
-                    <li><img src="" alt=""></li>
+            <div class="banner">
+                <ul class="ul_list">
+                    <li><img></li>
+                    <li><img></li>
+                    <li><img></li>
+                    <li><img></li>
+                    <li><img></li>
                 </ul>
-                <ul>
-                    <li style="background-color: red;"></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                    <li></li>
-                </ul>
+                <div class="num">
+                    <span class="on"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <a href="javascript:;" class="prev"><i class="iconfont icon-qiehuanqizuo">&lt;</i></a>
+                <a href="javascript:;" class="next"><i class="iconfont icon-qiehuanqiyou">&gt;</i></a>
             </div>
-            <div class="content shadow">
+            <div class="content">
                 暂无数据
             </div>
         </div>
@@ -43,9 +47,9 @@
     <div class="nav page_width">
         <!-- 导航条 -->
         <ul id="nav_bar">
-            <li><a class="active" href="Pages/school.html"><span><img src="./icon/学校.png" alt=""></span>学校</a></li>
+            <li><a class="active menu" href="Pages/school.html"><span><img src="./icon/学校.png" alt=""></span>学校</a></li>
             <li><a href="Pages/history.html"><span><img src="./icon/历史.png" alt=""></span>历史</a></li>
-            <li><a href=""><span><img src="./icon/美食.png" alt=""></span>美食</a></li>
+            <li><a class="menu" href="Pages/food.html"><span><img src="./icon/美食.png" alt=""></span>美食</a></li>
             <li><a href="Pages/view.html"><span><img src="./icon/景点.png" alt=""></span>景点</a></li>
             <li><a href="Pages/people.html"><span><img src="./icon/人物.png" alt=""></span>人物</a></li>
             <li><a href="Pages/culture.html"><span><img src="./icon/文化.png" alt=""></span>文化</a></li>

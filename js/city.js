@@ -1,7 +1,7 @@
 //使用bomb
 Bmob.initialize("7825e470ba6840e06eea41bd0cc046e4", "4e30b37255f606604737ccb905d03b4b");
 //定义数据
-let cityName = '';
+let cityName = '宜宾市';
 let len;
 $(function () {
     // 先得到城市名
@@ -237,10 +237,7 @@ function getDateFromCloud() {
         slideMove();
         swiper(imgArr);
         hoverItem(totalArr);
-
-
-
-
+        
     }).catch(err => {
         console.log(err)
     })

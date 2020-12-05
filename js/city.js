@@ -1,48 +1,113 @@
 //使用bomb
-Bmob.initialize("476eb82108327cf8ed4301539351558f", "1d738f9417efabb2260b89e9568d2a4c");
-let data = {};
+Bmob.initialize("7825e470ba6840e06eea41bd0cc046e4", "4e30b37255f606604737ccb905d03b4b");
 //定义数据
-let cityName = '宜宾';
-let school = [{ img_src: 'http://www.yblg.gov.cn/xwzx/tpxw/201911/W020191126427049541672.png', des: '四川轻化工大学' }, { img_src: 'http://www.yblg.gov.cn/lgzsw/tzcj/zsdt/201908/W020190829390768828458.png', des: '四川轻化工大学一角' }, { img_src: 'https://static-data.eol.cn/upload/school/201906/1559836453_3621_thumb.JPG', des: '宜宾学院' }, { img_src: 'https://static-data.eol.cn/upload/school/201906/1559836453_5335_thumb.JPG', des: '宜宾学院一角' }, { img_src: 'http://5b0988e595225.cdn.sohucs.com/images/20180901/e14bd60630dc4280a77932668c146390.jpeg', des: '西华大学' }, { img_src: 'http://p6.itc.cn/q_70/images03/20201019/0de89a55a2ca44d0b5681952802c3b2b.jpeg', des: '西华大学一角' }, { img_src: 'http://www.yuloo.com/d/file/1804/79a044a02a0d76ec4752e9221fc710f9.jpg', des: '电子科技大学' }, { img_src: 'http://www.yblg.gov.cn/lgzsw/tzcj/zsdt/201908/W020190829390768321430.png', des: '电子科技大学一角' }]
-let view = [{ img_src: 'https://tse2-mm.cn.bing.net/th/id/OIP.WKvlfBeiTMybydSNEl7izgHaFR?w=285&h=202&c=7&o=5&dpr=1.25&pid=1.7', des: '宜宾白塔' }, { img_src: 'https://tse3-mm.cn.bing.net/th/id/OIP.WqFIrAvjT-yhfn89OFc2-gHaCe?w=294&h=117&c=7&o=5&dpr=1.25&pid=1.7', des: '宜宾南门大桥' }, { img_src: 'https://tse2-mm.cn.bing.net/th/id/OIP.X0qSgGw8-RSgdAZJhX_4AwHaD4?w=304&h=180&c=7&o=5&dpr=1.25&pid=1.7', des: '宜宾金沙江大桥' }, { img_src: 'https://tse1-mm.cn.bing.net/th/id/OIP.OsV1aqftFJQnMJWml8v_TQHaE7?w=279&h=186&c=7&o=5&dpr=1.25&pid=1.7', des: '宜宾大观楼' }, { img_src: 'https://tse4-mm.cn.bing.net/th/id/OIP.5y53lFMmfAR1EGUVqaMJhQEsC7?w=307&h=192&c=7&o=5&dpr=1.25&pid=1.7', des: '宜宾真武山' }, { img_src: 'https://tse2-mm.cn.bing.net/th/id/OIP.gsafZY7O4L_Dqq_HPE1yeQAAAA?w=234&h=180&c=7&o=5&dpr=1.25&pid=1.7', des: '宜宾翠屏山' }, { img_src: 'https://tse1-mm.cn.bing.net/th/id/OIP.b-Niv6u-ZsCkGzPDZ7RmBAHaE9?w=287&h=192&c=7&o=5&dpr=1.25&pid=1.7', des: '宜宾石海' }, { img_src: 'http://img.pconline.com.cn/images/upload/upc/tx/photoblog/1508/16/c8/11258093_11258093_1439707182531.jpg', des: '宜宾竹海' }];
-let food = [{ des: '宜宾凉糕', img_src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=756134359,642782306&fm=26&gp=0.jpg' }, { des: '宜宾燃面', img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3993027778,4058088794&fm=26&gp=0.jpg' }, { des: '叶儿粑', img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3924397484,2919818332&fm=26&gp=0.jpg' }, { des: '李庄白肉', img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=62552343,4806317&fm=26&gp=0.jpg' }, { des: '宜宾烧烤', img_src: 'https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=2047324000,1959973331&fm=26&gp=0.jpg' }, { des: '南溪豆腐干', img_src: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=1957219969,2647390947&fm=26&gp=0.jpg' }, { des: '宜宾糟蛋', img_src: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4107256656,4104605968&fm=26&gp=0.jpg' }, { des: '宜宾芽菜', img_src: 'https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=4192051991,2413075031&fm=26&gp=0.jpg' }];
-// let poem= [{des: '六朵瑶花巴蜀绽,五粮玉液杜康传.', img_src: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1541032516,1901989215&fm=26&gp=0.jpg'}, {des: '山际见来烟,竹中窥落日.', img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4050944306,2309193106&fm=26&gp=0.jpg'}, {des: '长江万里东注,晓吹卷惊涛.', img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3835963673,3099366145&fm=26&gp=0.jpg'}, {des: '僰(bó)人文化', img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=861100097,177222165&fm=26&gp=0.jpg'}, {des: '悠悠三千载 茶香飘世界 ', img_src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1126734727,468409540&fm=26&gp=0.jpg'}，{img_src: 'https://inews.gtimg.com/newsapp_bt/0/12618806164/1000', des: '上行纤夫怨,下走船工惊.'}，{des: '江安竹簧', img_src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=369604382,1848611445&fm=26&gp=0.jpg'}, {des: '美哉宜宾,快哉燃面.', img_src: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3613536731,2953912638&fm=26&gp=0.jpg'}]
-let culture = [{ img_src: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1541032516,1901989215&fm=26&gp=0.jpg', des: '六朵瑶花巴蜀绽,五粮玉液杜康传.' }, { img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=4050944306,2309193106&fm=26&gp=0.jpg', des: '山际见来烟,竹中窥落日.' }, { img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=3835963673,3099366145&fm=26&gp=0.jpg', des: '长江万里东注,晓吹卷惊涛.' }, { img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=861100097,177222165&fm=26&gp=0.jpg', des: '僰(bó)人文化' }, { img_src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=1126734727,468409540&fm=26&gp=0.jpg', des: '悠悠三千载 茶香飘世界' }, { img_src: 'https://ss1.bdstatic.com/70cFuXSh_Q1YnxGkpoWK1HF6hhy/it/u=369604382,1848611445&fm=26&gp=0.jpg', des: '江安竹簧' }, { img_src: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3613536731,2953912638&fm=26&gp=0.jpg', des: '美哉宜宾,快哉燃面.' }, { 'img_src': 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=2756717615,3357959898&fm=26&gp=0.jpg', 'des': '宜宾老城' }]
-let history = [{ img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=1720338297,3689144619&fm=26&gp=0.jpg', des: '解放前的宜宾市合江门' }, { img_src: 'https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=1842954708,2427040363&fm=26&gp=0.jpg', des: '宜宾地委成立' }, { img_src: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=993985185,4107331835&fm=26&gp=0.jpg', des: '大观楼今昔对比' }, { img_src: 'https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1603857581031&di=3226a1d5db33d1aa9716d9becbc1b187&imgtype=0&src=http%3A%2F%2F5b0988e595225.cdn.sohucs.com%2Fimages%2F20180806%2F84d93ac9566042c1a47f733e849e0393.jpeg', des: '宜宾车站' }, { img_src: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2521407153,1168594423&fm=26&gp=0.jpg', des: '宜宾酒文化' }, { img_src: 'https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2117645075,608612349&fm=26&gp=0.jpg', des: '李庄记忆' }, { img_src: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=3030038450,3357520992&fm=26&gp=0.jpg', des: '古街古巷' }, { img_src: 'https://ss0.bdstatic.com/70cFuHSh_Q1YnxGkpoWK1HF6hhy/it/u=2231878531,240762237&fm=26&gp=0.jpg', des: '塔佑宜宾' }]
-let people = [{ img_src: 'https://pic.baike.soso.com/ugc/baikepic2/19775/20180202103508-856911371_jpg_167_220_6680.jpg/300', des: '郑佑之（1891～1931）革命烈士，四川早期中共党员，优秀革命活动家。' }, { img_src: 'https://pic.baike.soso.com/ugc/baikepic2/2519/20160717113052-1488785925.jpg/300', des: '刘华 国家一级演员安徽省黄梅戏剧院副院长' }, { img_src: 'https://pic.baike.soso.com/ugc/baikepic2/9782/20200605050403-522286231_jpeg_187_249_10900.jpg/0', des: '阳翰笙（1902年－1993年），原名欧阳本义，字继修，笔名华汉，是左翼作家领袖之一。' }, { img_src: 'https://pic.baike.soso.com/ugc/baikepic2/22841/cut-20190724174815-1950080578_jpg_248_310_8536.jpg/300', des: '李硕勋（1903年2月23日-1931年9月5日），原名开灼，字叔薰，出生于四川省庆符县（今属四川省宜宾市高县），毕业于上海大学，无产阶级革命家，中共早期参与领导军事斗争的先驱之一。' }, { img_src: 'https://pic.baike.soso.com/ugc/baikepic2/2894/cut-20200901142929-9228876_jpg_388_484_16929.jpg/300', des: '卢德铭，1905年6月9日出生，四川自贡人，1924年加入中国共产党，无产阶级革命家。' }, { img_src: 'https://pic.baike.soso.com/ugc/baikepic2/32485/cut-20190530170024-1897323043_jpg_374_467_27203.jpg/300', des: '赵一曼（李坤泰，1905年10月-1936年8月2日），字淑宁，出生于四川宜宾，毕业于黄埔军校六期，中国共产党党员，抗日烈士。' }, { img_src: 'https://pic.baike.soso.com/ugc/baikepic2/1882/20200605045906-1845189253_jpeg_296_388_11946.jpg/300', des: '唐君毅（1909年1月17日－1978年2月2日），四川宜宾人。现代思想家、哲学家、教育家。师从熊十力、方东美、梁漱溟等，是新儒家学派代表人物。' }]
-// let school_linshi = $.merge(school,view);
-// 录播图定义相关
-let totalArr = [school, view, food, culture, history, people];
-let sz = [];
+let cityName = '';
 let len;
-let imageArr = ["https://ss1.bdstatic.com/70cFvXSh_Q1YnxGkpoWK1HF6hhy/it/u=3148286252,1459280991&fm=15&gp=0.jpg", "https://ss0.bdstatic.com/70cFvHSh_Q1YnxGkpoWK1HF6hhy/it/u=2067157433,17111899&fm=15&gp=0.jpg", "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=2857365597,2516217507&fm=11&gp=0.jpg", "https://ss2.bdstatic.com/70cFvnSh_Q1YnxGkpoWK1HF6hhy/it/u=657143451,806653127&fm=26&gp=0.jpg", "https://ss3.bdstatic.com/70cFv8Sh_Q1YnxGkpoWK1HF6hhy/it/u=1514629818,989439105&fm=15&gp=0.jpg"]
 $(function () {
-    main();
+    // 先得到城市名
+    onloadPos();
+    setTimeout(() => {
+        getDateFromCloud()
+    }, 1000);
 });
 
 
 
-// 做一个主函数，每个函数都在这里做注册
-function main() {
-    //获取数据
-    getDateFromCloud(cityName);
-    $.each(totalArr, (i, v) => unloadData(v, i));
-    // 注册鼠标移入让item发生动画
-    hoverItem();
-    addHot();
-    // 注册unloadData
-    unloadImgSrc();
-    // 定时器注册swiper
-    let timer = setInterval(swiper,2500);
-    createDio(".pos", "宜宾 成都", 500, 400, "pos_menu", -470);
-    // 注册导航条上的滑条移动
-    // 获取数据
-    getDateFromCloud();
-    // 加载轮播图点点
-    // littleDot(imageArr);
+// 轮播图功能
+function swiper(imageArr) {
+    console.log("轮播图加载");
+    let timer = null;
+    let liW = $(".banner ul li:first").innerWidth();//求一个li的宽度
+    // liw = 632    
+    let n = 0;//用来管理给第几个span添加类.on、
+    let len = imageArr.length - 1;//5
+    timer = setInterval(function () {
+        /*
+            1.先将ul向左移动一个li的宽度，再将第一个li带出去
+            2.在执行完1后(形成一个动画队列)，将ul的left回归到0，再将带出去的li追加回ul的最后
+        */
+        play();
+    }, 3000)
+    function play() {
+        $(".banner ul").animate({ left: -liW }, function () {/*回调函数*/
+            $(this).css("left", 0).find("li:first").appendTo(this);
+        })
+        n++;
+        if (n > len) {
+            n = 0;
+        }
+        $(".banner .num span").eq(n).addClass("on").siblings().removeClass("on");
+    }
+    /*当鼠标移动到轮播图区域，轮播暂停*/
+    $(".banner").hover(function () {
+        clearInterval(timer);
+    }, function () {
+        timer = setInterval(function () {
+            play();
+        }, 3000)
+    })
+    /*点击next向右箭头*/
+    $(".next").click(function () {
+        play();
+    })
+    /*点击prev向左箭头*/
+    $(".prev").click(function () {
+        /*
+            看当前显示的图片前面的
+            1.先把ul往左移出一个li的宽度，同时，将最后一个li追加到ul最前头
+            2.执行动画：ul的left变为0，将最后一个li带回
+        */
+        /*$(".banner ul").css("left",-liW).find("li:last").prependTo(this);*//*此处不能用this,当前this指的是prev按钮*/
+        $(".banner ul").css("left", -liW).find("li:last").prependTo(".banner ul");
+        $(".banner ul").animate({ left: 0 })
+        /*解决点击prev时，span跟着一起变化*/
+        n--;
+        if (n < 0) {
+            n = len;/*n = $(".banner ul li").length)-1*/
+        }
+        $(".banner .num span").eq(n).addClass("on").siblings().removeClass("on");
+    })
+    /*点击span进行切换
+       当前轮播到第几张，放在n中存储，当点击span时，会得到span的index值
+       1.判断得到的index值是大于n还是小于n
+       如果小于n：通过for循环执行n到index的次数(不包括index,++)的向左循环切换效果
+       如果大于n：通过for循环执行n到index的次数(不包括index,--)的向右循环切换效果
+       2.将index赋值给n，进行span的切换
+    */
+    $(".banner .num span").each(function (index) {/*用each遍历*/
+        $(this).click(function () {
+            if (n < index) {
+                for (var i = n; i < index; i++) {
+                    $(".banner ul").animate({ left: -liW }, 100, function () {/*回调函数*/
+                        $(this).css("left", 0).find("li:first").appendTo(this);
+                    })
+                }
+            } else if (n > index) {
+                for (var i = n; i > index; i--) {
+                    $(".banner ul").css("left", -liW).find("li:last").prependTo(".banner ul");
+                    $(".banner ul").animate({ left: 0 }, 100);
+                }
+            }
+            n = index;
+            $(".banner .num span").eq(n).addClass("on").siblings().removeClass("on");
+        })
+
+    })
+
+}
+// 加载地方名称
+function onloadPos() {
+    console.log("加载地址...")
+    var map = new BMap.Map("bdMapBox");
+    var nowCity = new BMap.LocalCity();
+    nowCity.get(bdGetPosition);
+    function bdGetPosition(result) {
+        cityName = result.name;
+        $('.pos').text(cityName);
+    }
 }
 //定义添加一个推荐图片
-function addHot() {
+function addHot(totalArr) {
     hotNum = 3;
     for (let i = 0; i < totalArr.length; i++) {//控制
         for (let j = 0; j < hotNum; j++) {
@@ -59,7 +124,7 @@ function addHot() {
 function unloadData(list, num) {
     for (let i = 0; i < list.length; i++) {
         //生成item式
-        var $item = $("<div class=item><div class=image><img src=" + list[i]['img_src'] + "></div><div class=des>" + list[i]['des'] + "</div></div>");
+        var $item = $("<div class=item><div class=image><img src=" + list[i]['img_src'] + "></div><div class=des>" + list[i]['title'] + "</div></div>");
         $item.css('margin-bottom', 25)
         $('.main').children('div').eq(num).append($item)
 
@@ -70,99 +135,43 @@ function unloadData(list, num) {
 }
 
 //定义鼠标进入item时显示动画
-function hoverItem() {
-    // 图片上移，显示文字
+// 我们需要知道现在是哪个div在被显示，我们需要传数组过来，而具体传哪一个数组，是
+function hoverItem(totalArr) {
+    //获得y_offset
+    let y_offset = $('.image').position().top;
+    let item_height = $('.item').height();
+    let item_idx, parent_idx, arr = null;
+    $('.item').mouseenter(function () {
+        item_idx = $(this).index();
+        parent_idx = $(this).parent().index();
+        arr = totalArr[parent_idx];
+    })
     $('.item').click(function () {
-        $(this).find(".image").animate({
+        $(this).children('.image').css({
             top: -100,
-        }, 'slow', () => {
-            $(this).children('.des').text("describe");
-            $(this).children('.image').css('transform', 'scale(0.5)')
-        })
+            transform: 'scale(0.5)'
+        });
+        $(this).children('.des').css({
+            height: 0.6 * item_height,
+            padding: 10,
+            textAlign: 'justify',
+            textIndent: '2em'
+        }).text(arr[item_idx].des);//不是永远都是school，弄成对应list的
+
     })
     $('.item').mouseleave(function () {
-        $(this).find(".image").animate({
-            top: 0,
-        }, 'fast', () => {
-            $(this).children('.des').text("title");
-            $(this).children('.image').css('transform', 'scale(1)')
-        })
-    })
-}
-
-
-// 实现轮播图
-/**每隔一段时间换一张图片就行不用那么麻烦 */
-function unloadImgSrc() {
-    $.each(imageArr,(i,v)=>{
-        $('.slideshow').find('ul').eq(0).children('li').eq(i).children('img').attr('src',v);
-    })
-    
-}
-
-let i = 0;
-function swiper() {
-    $('.slideshow').find('ul').eq(0).animate({
-        left: -600 * i,
-    })
-    $('.slideshow').find('ul').eq(1).children('li').eq(i).css('backgroundColor','red').siblings('li').css('backgroundColor','#ccc');
-    
-    i++;
-    if(i == imageArr.length){
-        i = 0; 
-    }
-}
-
-// 点击下面的点点就可以到对应的地方
-function littledot() {
-    $('.slideshow').find('ul').eq(1).children('li').mouseenter(function(){
         let index = $(this).index();
-        i = index;
+        $(this).children('.image').css({
+            top: y_offset,
+            transform: 'scale(1)'
+        });
+        $(this).children('.des').css({
+            height: 25,
+            padding: 10,
+            textAlign: 'center',
+            textIndent: 0
+        }).text(arr[item_idx].title);
     })
-}
-
-
-//创建弹窗功能
-function createDio(className = ".menu", content, w = 200, h = 100, _ID = '', offset_x = 0) {
-    // 传来那个标签的类名或者id
-    // 首先在这个东西下面产生一个
-    const _that = $(className);
-    _that.css('position', 'relative');//将它本身成为父元素用相对定位
-    let $menu;
-    if (_ID == null) {
-        $menu = $("<div class=dialog>" + content + "</div>");
-    } else {
-        $menu = $("<div id=" + _ID + ">" + content + "</div>");
-    }
-    $menu.css({
-        width: w,
-        height: h,
-        position: 'absolute',
-        top: _that.height() + 8,
-        left: offset_x,
-        border: "1px solid #e5e5e5",
-        backgroundColor: "#fff",
-        padding: 5,
-        borderRadius: 8,
-        boxShadow: "-2px 2px 6px #e5e5e5",
-        zIndex: 1000,
-        display: "none"
-    })
-    _that.append($menu);
-
-    hoverShow(className, "#" + _ID);
-}
-// 实现鼠标移入显示弹窗
-function hoverShow(target = ".menu", id = '.dialog') {
-    let _div = $(target);
-    // 鼠标移入
-    _div.mouseenter(function () {
-        $(this).children(id).slideDown();
-    })
-    $(id).mouseleave(function () {
-        $(this).slideUp('fast');
-    })
-
 }
 
 // 实现滑块导航条
@@ -182,46 +191,57 @@ function slideMove() {
 
 }
 
+// 实现轮播图
+/**每隔一段时间换一张图片就行不用那么麻烦 */
+function unloadImgSrc(imageArr) {
+    $.each(imageArr, (i, v) => {
+        $(".ul_list").find('li').eq(i).children('img').attr('src', v);
+    })
+
+}
 
 
 // 获取数据区域
-function getDateFromCloud(city_name) {
+function getDateFromCloud() {
+    //调用查地址的函数
+    console.log("查询完成。cityName=" + cityName)
     const query = Bmob.Query('index');
-    query.equalTo("cityName","==", city_name);
+    console.log("已在开始查询....")
+    query.equalTo("cityName", "==", cityName);
     query.find().then(res => {
-        // console.log(res);
+        console.log("加载数据...");
         res = res[0];
-        // 在这里调用数据加载就行了，然后过后就是关于一个res里面应该有哪些数据
-        // $('.content').text(res.cityName);
-        // let imgArr = $('.image').children('img');
-        // $.each(imgArr,function(i,item){
-        //     $(item).attr("src",res.hotLocImg[i]);
-        // })
+        console.log(res);
+
+        //对res进行一个解析操作
+        // 数据定义
+        let imgArr = res.imgArr;
+        let culture = res.culture;
+        let food = res.food;
+        let history = res.history;
+        let people = res.people;
+        let school = res.school;
+        let view = res.view;
+        let totalArr = [school, history, food, view, people, culture];
+
+        // 数据使用
+        // 加载城市名
+        // 加载轮播图图片
+        unloadImgSrc(imgArr);
+        // 加载城市介绍
         $('.content').text(res.intro);
+        // 加载item式
+        $.each(totalArr, (i, v) => unloadData(v, i));
+        // 不需要数据的就用main
+        addHot(totalArr);
+        slideMove();
+        swiper(imgArr);
+        hoverItem(totalArr);
+
+
 
 
     }).catch(err => {
         console.log(err)
     })
-}
-
-// 实现轮播图那个小黑点的动态加载
-function littleDot(imgArr){
-    let len = imgArr.length;
-    str = ''
-    for(let i=0;i<len;i++){
-        str+='<li></li>'
-    }
-    let $ld= $(str);
-
-    $ld.css({
-        width:12,
-        height:12,
-        borderRadius:0.5*12,
-        backgroundColor:'#e6e6e6',
-        opacity:0.8
-    })
-    console.log($('.slideshow').children('ul').append($ld));
-
-
 }

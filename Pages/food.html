@@ -1,156 +1,196 @@
 <!DOCTYPE html>
 <html>
+
 	<head>
 		<meta charset="UTF-8">
-		<title>宜宾美食篇-宜宾燃面</title>
+		<title>宜宾美食</title>
 		<style type="text/css">
-			*{
+			* {
 				margin: 0;
 				padding: 0;
 			}
-			h3{
-				width: 15%;
-				margin-top: 1px;
-				margin-left: 24px;
+			
+			img {
+				
+				float: right;
+				border-radius: 21px;
+				
 			}
 			
-			.container{
-				margin: 32px auto;
-				height: 580px;
-				width: 90%;
-				border: outset;
-				border-radius: 15px;
-				border-color: gainsboro;
-				background: rgb(245,246,250);
-				position: relative;
+			span{
+				font-weight: bolder;
+				font-size: 30px;
+				font-family: "楷体";
+				
 			}
-			.header{
-				margin-top: 22px;
-				width: 200px;
-				height: 50px;
-				/*border-style: solid;*/
-				border: solid 1px;
-				border-left: 0px;
+			body{
+				/*background-image: url(../images/竹子背景.jpg);*/
+				background-repeat: no-repeat;
+				background-size:cover;
+			}
+			
+			.fmain{
+				width: 100%;
+				margin: 0 auto;
+				/*background: url(../images/竹子背景3.png);*/
+				background-repeat: no-repeat;
+				background-position: bottom;
+			}
+			
+			
+			
+			.title{
 				text-align: center;
-				border-top-right-radius: 10px;
-				border-bottom-right-radius: 10px;
-				background: #FFFFFF;
-				
-			}
-			.img{
-				margin-top: 12px;
-				margin-left: 65px;
-				width: 335px;
-				height: 215px;
-				/*border: solid;*/
-				float: left;
-				
-				
+				font-weight: bolder;
+				font-size: 40px;
+				font-family: "楷体";
+				letter-spacing: 7px;
+				text-shadow: 1px 1px 1px #666,
+	  	             3px 3px 8px black;
+
 			}
 			
-			.img img{
-				vertical-align: middle;
+			.main {
+				width: 80%;
+				margin: 0 auto;
 			}
 			
+			.food {
+				width: 100%;
+				height: 300px;
+				background: #f97467;
+				margin-top: 5px;
+				border-radius: 35px;
+				margin-bottom: 12px;
+			}
+			
+			.image {
+				float: right;
+				padding: 35px 36px 0px 0px;
+				width: 340px;
+				height: 200px;
+				position: relative;		
+				}
+			
+		
 			.message{
-				width: 680px;
-				height: 468px;
-				/*border: solid;*/
-				margin-top: 3px;
-				margin-right: 55px;
-				float: right;
-				border-radius: 15px;
-			}
-			
-			.message ul{
-				list-style-type: none;
-				margin-left: 12px;
-				margin-top: 60px;
-				width: 120px;
+				margin: 35px 0px 0px 54px;
 				float: left;
+				width: 600px;
 			}
 			
-			.message ul li{
-				padding-bottom: 10px;
-				padding-top: 19px;
-				/*text-align: center;*/
-			}
-			
-			
-			.message ul li a{
-				text-decoration: none;
-				font-size: 16px;
-				font-family: "宋体";
-			}
-			.message ul span{
-				font-weight: bold;
-				font-size: 20px;
-			}
-			
-			a:link,
-			a:visited,
-			a:active {
-				color: black;
-			}
-			
-			.widows{
-				width: 500px;
-				height: 408px;
-				/*border: solid;*/
-				float: right;
-				margin-top: 20px;
-				margin-right: 20px;
-				border-radius: 15px;
+			.mess1{
 				
+				color: white;
+				margin-bottom: 15px;
 			}
-			.footer{
-				width: 335px;
-				height: 247px;
-		/*		border: solid;*/
-				position: absolute;
-				left: 60px;
-			    bottom: 14px;
-			    padding: 6px;
-			}
-		 
-			 .nitai{
-			 	background-color: #fff;
-			 	border-radius: 15px;
-			 	box-shadow: -14px 16px 20px #CCCCCC;
-			 }
+			.mess2{
+				color: white;
+				text-indent: 2em;
+				height: 150px;
+    			/*overflow: hidden;*/
+    			font-family: cursive;
+    			font-size: 19px;
+    			text-align: justify;
+			}	
 		</style>
+		<script src="../JQuery/jquery-3.4.1.js"></script>
 	</head>
+
 	<body>
-		<div class="container">
-			<div class="header">
-				<h1>宜宾燃面</h1>
+		<div class="fmain">
+		<div class="main">
+			<p class="title"> 舌尖上的宜宾</p>
+			<div class="food">
+				<div class="image">
+			         <img class="cimage" src="../images/food1.png" />
+			        <!-- <p>宜宾燃面</p>-->
+				</div>
+				<div class="message">
+				   <p class="mess1"><span>宜宾燃面</span>（宜宾传统名小吃）</p>
+				   <p  class="mess2">宜宾燃面，是四川省宜宾地区最具特色的传统名小吃之一。
+				         原名叙府燃面，旧称油条面，因其油重无水，点火即燃，故名燃面.
+				         燃面小吃选用当地优质水面条为主料，以宜宾碎米芽菜、小磨麻油、鲜板化油、八角、山奈、芝麻、花生、核桃、金条辣椒、上等花椒、味精以及香葱、豌豆尖或菠菜叶等辅料，将面煮熟，捞起甩干，去除碱味，再按传统工艺加油佐料即成。
+		                       因为燃面是素面，改革开放以后燃面家族又多了一些新成员：例如荤燃面、燃汤面等等。<a href="food1.html" style="color: black;">瞅瞅更多</a>
+				   </p>
+				</div>
 			</div>
 			
-			<div class="main">
-				<div class="img">
-					<img src="images/food1.png" class="nitai"/>
+			<div class="food">
+				<div class="image">
+			         <img class="cimage" src="../images/李庄白肉.jpg"  />
 				</div>
-				<div class="message nitai">
-					
-					<ul>
-						<span>Top榜单</span>
-						<li><img src="images/运输地点.png" alt="" /><a href="https://map.baidu.com/search/%E5%AE%9C%E5%AE%BE%E4%BA%BA%E6%B0%91%E8%B7%AF19%E5%8F%B7/@11647333.135,3325985.92,19z?querytype=s&da_src=shareurl&wd=%E5%AE%9C%E5%AE%BE%E4%BA%BA%E6%B0%91%E8%B7%AF19%E5%8F%B7&c=186&src=0&pn=0&sug=0&l=13&b=(11634205,3324186;11676605,3344410)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" target="iframe">人民路19号</a></li>
-						<li><img src="images/运输地点.png" alt="" /><a href="https://map.baidu.com/search/%E5%AE%9C%E5%AE%BE%E6%88%8E%E5%B7%9E%E8%B7%AF%E4%B8%AD%E6%AE%B5%E5%BE%B7%E7%83%A8%E4%B8%BD%E5%9B%AD%E5%B0%8F%E5%8C%BA1%E5%B1%82/@11649217.685,3324481.74,19z?querytype=s&da_src=shareurl&wd=%E5%AE%9C%E5%AE%BE%E6%88%8E%E5%B7%9E%E8%B7%AF%E4%B8%AD%E6%AE%B5%E5%BE%B7%E7%83%A8%E4%B8%BD%E5%9B%AD%E5%B0%8F%E5%8C%BA1%E5%B1%82&c=186&src=0&pn=0&sug=0&l=19&b=(11647001.885,3325827.92;11647664.385,3326143.92)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" target="iframe">戎州路德烨丽园小区1层</a></li>
-						<li><img src="images/运输地点.png" alt="" /><a href="https://map.baidu.com/search/%E5%AE%9C%E5%AE%BE%E5%8F%99%E5%B7%9E%E5%8C%BA%E8%AF%9A%E4%BF%A1%E8%B7%AF48%E5%8F%B7%E4%BA%8C%E6%A0%8B1%E5%B1%8225%E5%8F%B7/@11648234.995,3323147.41,19.45z?querytype=s&da_src=shareurl&wd=%E5%AE%9C%E5%AE%BE%E5%8F%99%E5%B7%9E%E5%8C%BA%E8%AF%9A%E4%BF%A1%E8%B7%AF48%E5%8F%B7%E4%BA%8C%E6%A0%8B1%E5%B1%8225%E5%8F%B7&c=186&src=0&pn=0&sug=0&l=19&b=(11648886.435,3324323.74;11649548.935,3324639.74)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" target="iframe">叙州区诚信路48号二栋1层25号</a></li>
-						<li><img src="images/运输地点.png" alt="" /><a href="https://map.baidu.com/search/%E5%8D%83%E9%BA%A6%E9%A6%99(%E9%B2%81%E5%AE%B6%E5%9B%AD%E5%BA%97)/@11647110.195,3326116.39,19z?querytype=s&da_src=shareurl&wd=%E5%8D%83%E9%BA%A6%E9%A6%99(%E9%B2%81%E5%AE%B6%E5%9B%AD%E5%BA%97)&c=186&src=0&wd2=%E5%AE%9C%E5%AE%BE%E5%B8%82%E7%BF%A0%E5%B1%8F%E5%8C%BA&pn=0&sug=1&l=19&b=(11646803.83667373,3325988.585;11647466.33667373,3326304.585)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&sug_forward=fa769cd123a84a52c91b95e1&device_ratio=1" target="iframe">千麦香(鲁家园店)</a></li>
-						<li><img src="images/运输地点.png" alt="" /><a href="https://map.baidu.com/search/%E6%98%8E%E4%BC%A6%E5%A0%82281%E5%8F%B7/@11647568.0316269,3326073.1946915276,20.21z?querytype=s&da_src=shareurl&wd=%E6%98%8E%E4%BC%A6%E5%A0%82281%E5%8F%B7&c=186&src=0&pn=0&sug=0&l=19&b=(11646778.945,3325958.39;11647441.445,3326274.39)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" target="iframe">明伦堂281号</a></li>
-					</ul>
-					<iframe src="https://map.baidu.com/search/%E5%AE%9C%E5%AE%BE%E4%BA%BA%E6%B0%91%E8%B7%AF19%E5%8F%B7/@11647333.135,3325985.92,19z?querytype=s&da_src=shareurl&wd=%E5%AE%9C%E5%AE%BE%E4%BA%BA%E6%B0%91%E8%B7%AF19%E5%8F%B7&c=186&src=0&pn=0&sug=0&l=13&b=(11634205,3324186;11676605,3344410)&from=webmap&biz_forward=%7B%22scaler%22:1,%22styles%22:%22pl%22%7D&device_ratio=1" class="widows" name="iframe"></iframe>
-				</div>
-				
+				<div class="message">
+				  <p class="mess1"><span>李庄白肉</span></p>
+				  <p class="mess2">
+				  	李庄白肉，全名为"李庄刀口蒜泥白肉"，是四川宜宾历史文化名镇李庄的传统美食，选用皮薄肉嫩、
+				  	肥瘦比例恰当的"长白山"或"约克"或"巴克夏"猪肉，成菜白肉把瘦均匀，晶莹剔透，每片长20厘米，宽10厘米，厚1至2毫米。
+				  	加以多种酱料制成，有清香爽口，肥而不腻，咀嚼化渣等特点。<a href="food2.html" style="color: black;">查看更多</a>
+				  </p>
+			    </div>
 			</div>
 			
-			<div class="footer nitai">
-				<p>
-					<img src="images/评价.png" alt="" />
-					松散红亮，香味扑鼻，辣麻相间，油重无水，味美爽口。既可佐酒，又可果腹。吃燃面也少不了燃面伴侣，一碗特制的汤。这碗汤去除了干面干脆哨的燥嘴，滋润了口舌肠胃。这碗汤由猪油，紫菜和豆芽组成，撒上细盐和胡椒等调料，清淡鲜美，吃面前喝上几口，清理食道，打开食欲，吃完面后，再喝上几口，鲜汤化食。加点醋，醋更开胃，更消食了，喝下去让人解除劳累的疲倦，精神饱满地去回味这碗好面。一碗面，一碗汤，即能让你领略川南特有的油重无水、一点即燃。
-				</p>
+			<div class="food">
+				<div class="image">
+			         <img class="cimage" src="../images/凉糕.png" />
+				</div>
+				<div class="message">
+				  <p class="mess1"><span>水井凉糕</span>(中国特色传统美食)</p>
+				  <p class="mess2">
+				  	凉糕是四川宜宾的一款传统特色小吃。
+				  	其味美香甜沙软，食之清爽可口，还有解毒排脓、利水消肿、清热去湿、健脾止泻的功效。主要原料为大米、井水、红糖。
+				  	宜宾传统的凉糕与普通大米制作的糕点截然不同，口感上鲜嫩爽口，丝丝顺滑。在炎炎夏日放下冰箱里冷藏一段时间后可谓是夏日不可或缺的解暑良药。
+                                    凉糕源自四川宜宾近几年在四川各地、重庆、贵州、海南、浙江嘉兴等地开始风靡起来，由于其采用米浆熬制而成再配上红糖水，越来越多的女性将其作为美容养颜、生津止渴的夏日美食佳品。
+				  </p>
+			    </div>
 			</div>
+			
+			<div class="food">
+				<div class="image">
+			         <img src="../images/鸭儿粑1.jpg" class="cimage" />
+				</div>
+				<div class="message">
+				  <p class="mess1"><span>鸭儿粑</span></p>
+				  <p class="mess2">
+				  	鸭儿粑又名猪儿粑，是一道宜宾名点，该品色泽洁白晶亮，皮薄鲜嫩，咬一口浓香扑鼻，油而不腻，芳香爽口，具有不粘叶、不粘筷、不粘牙等“三不粘”的特点。
+				  	主要原料有猪肉、糯米、鸭儿粑叶（良姜叶）、芽菜、各种洗沙等。
+				  	味道很好，油而不腻，芳香爽口。以其鲜嫩如雏鸭而得名。
+				  </p>
+			    </div>
+			</div>
+			
+			<div class="food">
+				<div class="image">
+			         <img src="../images/芽菜.jpg" class="cimage" />
+				</div>
+				<div class="message">
+				  <p class="mess1"><span>宜宾芽菜</span></p>
+				  <p class="mess2">
+				  	宜宾芽菜是四川宜宾市别具特色的地方名菜，被誉为四川四大名菜之一，脆、甜、嫩、味美可口。有着悠久的历史。据可考资料清嘉庆《叙州府志.物产》中记载：“葱韭蒜白菜青菜蔓菁各厅县志皆有。”说明当时做为芽菜的原料——青菜已经有较为广泛的种植了。
+				  </p>
+			    </div>
+			</div>
+			
+			
+			<div class="food">
+				<div class="image">
+			         <img src="../images/竹海名菜.jpg" class="cimage"/>
+				</div>
+				<div class="message">
+				  <p class="mess1"><span>竹海名菜</span></p>
+				  <p class="mess2">
+				  	以竹笋、竹荪蛋、竹荪菜、竹菌、竹海腊肉、竹筒豆花、竹筒竹、竹荪酒、竹泡菜等“竹”菜汇成的“全竹宴”。可谓满桌皆是竹，无竹不成席，令人大开眼界、垂涎欲滴。
+				  </p>
+			    </div>
+			</div>
+			
 		</div>
+		
+	  </div>
 	</body>
 </html>
+
+
+
+
+      

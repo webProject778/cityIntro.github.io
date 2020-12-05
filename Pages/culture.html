@@ -26,9 +26,10 @@
 				font-weight: bolder;
 				font-size: 30px;
 				font-family: "楷体";
+				/*text-decoration: underline;*/
 			}
 			body{
-				background-image: url(images/文化背景1.png);
+				background-image: url(../images/文化背景1.png);
 				background-repeat:no-repeat;
 				background-size: cover;
 			}
@@ -37,7 +38,7 @@
 				width: 100%;
 				margin: 0 auto;
 				/*background: black;*/
-				background: url(images/文化背景1.jpg);
+				/*background: url(../images/文化背景1.jpg);*/
 				background-repeat: no-repeat;
 				background-position: top;
 			}
@@ -48,6 +49,8 @@
 				font-size: 40px;
 				font-family: "楷体";
 				letter-spacing: 10px;
+				text-shadow: 1px 1px 1px #666,
+	  	             3px 3px 8px black;
 			}
 			
 			.main {
@@ -59,43 +62,59 @@
 			.culture {
 				width: 100%;
 				height: 300px;
-				background: cadetblue;
+				background: #96969e;
 				margin-top: 5px;
 				border-radius: 35px;
+				margin-bottom: 12px;
 			}
 			
 			.image {
 				float: right;
-				padding: 23px 36px 0px 0px;
+				padding: 32px 36px 0px 0px;
 				width: 340px;
 				height: 200px;
 			}
-			
+			.image:hover img{
+				transform: scale(1.1,1.1);
+				transition: all 1s ease-in-out;
+			}
 			.message{
-				margin: 35px 0px 0px 41px;
+				margin: 35px 0px 0px 54px;
 				float: left;
 				width: 600px;
 			}
 			
-			.message p{
-				text-indent: 2em;
+			.mess1{
+				
 				color: white;
+				margin-bottom: 15px;
+			}
+			.mess2{
+				color: white;
+				text-indent: 2em;
+				height: 150px;
+    			overflow: hidden;
+    			font-family: cursive;
+    			font-size: 19px;
+    			text-align: justify;
+    			
 			}
 			
 		</style>
+		<script src="../JQuery/jquery-3.4.1.js"></script>
 	</head>
 
 	<body>
 		<div class="fmain">
 		<div class="main">
-			<p class="title">文化鉴赏</p>
+			<p class="title">宜宾文化鉴赏</p>
 			<div class="culture">
 				<div class="image">
-			         <img src="images/酒文化.jpg" />
+			         <img src="../images/酒文化.png" />
 				</div>
 				<div class="message">
-				   <p><span>酒文化</span></p>
-				   <p>
+				   <p class="mess1"><span>酒文化</span></p>
+				   <p class="mess2">
 				   	酒之历史：宜宾，自古以来就是一个多民族杂居的地区。聚居此地的各族人民依托世代承传的习俗和经验，曾经在不同的历史时期，酿制出了各具特色的历史美酒。有史可考，诸如先秦时期僚人酿制的清酒、秦汉时期僰人酿制的蒟酱酒、三国时期鬏鬏苗人用野生小红果酿制的果酒等。
 				   </p>
 				</div>
@@ -103,11 +122,11 @@
 			
 			<div class="culture">
 				<div class="image">
-			         <img src="images/竹文化.jpg" />
+			         <img src="../images/竹文化.jpg" />
 				</div>
 				<div class="message">
-				  <p><span>竹文化</span></p>
-				  <p>
+				  <p class="mess1"><span>竹文化</span></p>
+				  <p class="mess2">
 				  	竹之美景：宜宾是一个以绿色竹子环绕起来的城市，因《卧虎藏龙》而名扬天下的蜀南竹海则是宜宾“竹之美景”的代表，120平方公里，清风徐来，极目之处，尽皆竹浪，北宋文人黄庭坚一句“壮哉，竹波万里”道出了蜀南竹海的气魄和雄浑。
 				  	竹之工艺：借助丰富的竹子资源，在宜宾市长宁、江安县形成了许多以竹子为原料的工艺品，品种多，涵盖人们生活的各个方面，有竹雕、竹根雕、竹编等，特别是借助竹根而雕成的各种工艺品，江安竹簧2008年被列入国家级非物质文化遗产保护。
 				  	竹之美食：宜宾人以竹子为原料作出了各种菜肴，进而形成了“全竹席”，不同品种、不同生长期的竹子以及竹子的不同部位，配合着其他美味原料可以制作出“竹之佳肴”，如竹筒饭、竹根酒、竹叶黄粑、三鲜竹荪汤、凉拌笋丝等。
@@ -117,11 +136,11 @@
 			
 			<div class="culture">
 				<div class="image">
-			         <img src="images/大江文化.jpg" />
+			         <img src="../images/大江文化.jpg" />
 				</div>
 				<div class="message">
-				  <p><span>大江文化</span></p>
-				  <p>
+				  <p class="mess1"><span>大江文化</span></p>
+				  <p class="mess2">
 				  	在宜宾境内，有长江、金沙江、岷江，还有淯江、符江、横江、越溪河、南广河、黄沙河、萃河等，是这些河流为宜宾带来了富足，也是这些河流孕育了宜宾的大江文化，延续了宜宾的文化根脉。宜宾的大江文化，涵盖了龙崇拜、敬“川主”、修塔镇水、码头民俗等。
 				  	宜宾是长江起点，宜宾码头有“六渡八帮”。六渡是六大渡口：北关渡、东门渡、合江门渡、上渡口、中渡口、下渡口。八帮是八大船帮：干货帮、成都帮、五板帮、叙渝帮、叙泸帮、竹木帮、盐帮、嘉阳帮。
 				  </p>
@@ -130,11 +149,11 @@
 			
 			<div class="culture">
 				<div class="image">
-			         <img src="images/茶文化1.jpg" />
+			         <img src="../images/茶文化1.jpg" />
 				</div>
 				<div class="message">
-				  <p><span>茶文化</span></p>
-				  <p>
+				  <p class="mess1"><span>茶文化</span></p>
+				  <p class="mess2">
 				  	“僰道出香茗，悠悠三千载”。僰道是宜宾最早的行政称谓，公元前1022年，僰人助周武王伐纣有功，被封为僰侯，始建僰侯国。宜宾有3000年茶叶生产历史，是茶马古道的驿站。
 				  </p>
 			    </div>
@@ -142,11 +161,11 @@
 			
 			<div class="culture">
 				<div class="image">
-			         <img src="images/僰人文化1.png" />
+			         <img src="../images/僰人文化1.png" />
 				</div>
 				<div class="message">
-				  <p><span>僰人文化</span></p>
-				  <p>
+				  <p class="mess1"><span>僰人文化</span></p>
+				  <p class="mess2">
 				  	僰民族是曾经长期生活在宜宾的少数民族之一，已销声匿迹，只有文物和遗存堪资探究。宜宾的僰文化，可自崖葬悬棺、铜鼓中略知一二。
 				  </p>
 			    </div>
@@ -155,11 +174,11 @@
 			
 			<div class="culture">
 				<div class="image">
-			         <img src="images/船工文化.jpg" />
+			         <img src="../images/船工文化.jpg" />
 				</div>
 				<div class="message">
-				  <p><span>船工文化</span></p>
-				  <p>
+				  <p class="mess1"><span>船工文化</span></p>
+				  <p class="mess2">
 				  	从明代开始，金沙江下游的生产和社会得到空前未有的发展，金沙江船运也自然得到前所未有的发展，金沙江下游船工号子因此逐渐形成的。金沙江下游船工号子来源于金沙江船工们的生活，是在古老的木船航运过程中产生出来的一种独特的民间音乐。它集指挥航运劳作、协调航运劳动的一致性和娱乐性为一体，是对船工生存方式和生活状态的真实写照。
 				  </p>
 			    </div>
@@ -167,6 +186,24 @@
 			
 		</div>
 	  </div>
+	  <script >
+
+	  	$(function(){
+	  		$('img').mouseover(function(){
+	  			$(this).css({
+	  				transform: "scale(1.1,1.1)",
+	  				transition: "all 0.8s" 
+	  			})
+	  		})
+	  		
+	  		$('img').mouseleave(function(){
+	  			$(this).css({
+	  				transform: "scale(1,1)",
+	  				transition: "all 0.8s" 
+	  			})
+	  		})
+	  	})
+	  </script>
 	</body>
 </html>
 

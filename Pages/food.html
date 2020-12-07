@@ -187,6 +187,23 @@
 		</div>
 		
 	  </div>
+		 <script >
+	  	$(function(){
+	  		$('img').mouseover(function(){
+	  			$(this).css({
+	  				transform: "scale(1.1,1.1)",
+	  				transition: "all 0.8s" 
+	  			})
+	  		})
+	  		
+	  		$('img').mouseleave(function(){
+	  			$(this).css({
+	  				transform: "scale(1,1)",
+	  				transition: "all 0.8s" 
+	  			})
+	  		})
+	  	})
+	  </script>
 	</body>
 </html>
 

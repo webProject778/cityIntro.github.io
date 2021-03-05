@@ -53,9 +53,8 @@ a{
 
 .down {
     width: 90vw;
-    height: 300px;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
 }
 
 .banner{
@@ -145,16 +144,11 @@ a{
 }
 .down .content {
     width: 40%;
-    height: 120px;
     padding: 5px;
     text-indent: 2em;
     letter-spacing: 1px;
     font-size: 14px;
-    display: -webkit-box;
-    overflow: hidden;
-    -webkit-box-orient: vertical;
-    -webkit-line-clamp: 6;
-    background-color: #f5f6fa;
+    font-family: fantasy;
     position: relative;
     border-radius: 15px;
     background: linear-gradient(45deg, #77A1D3, #79CBCA, #E684AE);

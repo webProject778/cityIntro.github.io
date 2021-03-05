@@ -12,7 +12,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-   background: linear-gradient(45deg, #77A1D3, #79CBCA, #E684AE);
+    background: linear-gradient(45deg, #77A1D3, #79CBCA, #E684AE);
 
 }
 a{

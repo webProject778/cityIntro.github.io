@@ -227,7 +227,7 @@ a{
     margin-left:calc((1382.4px - 316.48px * 4 - 20px)/4) ;
 }
 .item:hover{
-    box-shadow: 5px 5px 8px#bdbdbd, -5px 5px 15px#bdbdbd;
+    box-shadow: 5px 5px 8px #666, -5px 5px 15px #666;
 }
 
 .item .hot {

@@ -19,6 +19,9 @@ body {
 a{
     text-decoration: none;
 }
+.pos{
+    font-weight:bold;
+}
 .page_width {
     width: 90vw;
 }

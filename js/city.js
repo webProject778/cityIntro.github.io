@@ -159,7 +159,7 @@ function hoverItem(totalArr) {
         }).text(arr[item_idx].des);//不是永远都是school，弄成对应list的
 
     })
-    /*$('.item').mouseleave(function () {
+    $('.item').mouseleave(function () {
         let index = $(this).index();
         $(this).children('.image').css({
             top: y_offset,
@@ -171,7 +171,7 @@ function hoverItem(totalArr) {
             textAlign: 'center',
             textIndent: 0
         }).text(arr[item_idx].title);
-    })*/
+    })
 }
 
 // 实现滑块导航条

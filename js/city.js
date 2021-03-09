@@ -182,7 +182,7 @@ function slideMove() {
         // calc(85px - 100px*0.5 + 32px*0.5)
         let idx = $(this).index();
         // 控制滑块移动
-        $(".slideBlock").stop().animate({
+        $(".slideBlock").stop(false,true).animate({
             left: x_offfset,
         }, "slow");
         // 控制对应区域显示其他区域隐藏
